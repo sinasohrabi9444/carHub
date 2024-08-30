@@ -1,0 +1,185 @@
+/* about footer section style css */
+
+.footer {
+  color: white;
+  background-color: #1c1c1c;
+  padding: 40px 0;
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  padding: 15px;
+  align-items: start;
+}
+.footer-content h4 {
+  color: #ffc000;
+}
+.footer-content li {
+  list-style-type: none;
+}
+.about-footer,
+.contact-footer,
+.services-footer,
+.work-time {
+  display: flex;
+  flex-direction: column;
+
+  align-items: start;
+  width: 25%;
+  padding: 15px;
+}
+.about-title-footer {
+  display: flex;
+  align-items: center;
+}
+.about-footer img {
+  width: 100px;
+}
+.about-footer p {
+  color: gray;
+  padding: 20px;
+}
+
+.about-footer a {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* section content styles css */
+.contact-footer {
+  width: 25%;
+  justify-content: center;
+}
+
+.contact-footer h4 {
+  margin: 20px 0;
+}
+.contact-footer ul li {
+  margin: 20px 0;
+}
+.contact-footer .navbar-icons {
+  margin-right: 2rem;
+}
+.contact-footer .navbar-icons .navbar-icon {
+  background-color: rgb(96, 96, 96);
+}
+.two-section{
+  display: flex;
+  width: 50%;
+}
+/* services styles */
+
+.services-footer h4 {
+  margin: 15px 0;
+}
+
+.services-footer ul {
+  margin-top: 10px;
+}
+.services-footer ul a {
+  text-decoration: none;
+  color: inherit;
+}
+.services-footer ul li {
+  list-style-type: disc;
+  cursor: pointer;
+  padding: 10px 0;
+  transition: color 0.1s ease, padding 0.1s ease;
+}
+.services-footer ul li:hover {
+  color: red;
+  padding-right: 10px;
+}
+
+.contact-footer , .services-footer {
+  width: 50%;
+}
+/* work-time section */
+
+.work-time h4 {
+  margin: 15px 0;
+}
+
+.work-time ul {
+  margin-top: 20px;
+}
+.work-time ul li {
+  padding: 5px;
+}
+.work-time ul li span {
+  padding-left: 5px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 992px) {
+  .about-footer p {
+    padding: 5px;
+  }
+  .about-footer,
+  .contact-footer,
+  .services-footer,
+  .work-time {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 912px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .about-footer, .work-time {
+    width: 100%;
+  }
+  .two-section  {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 512px) {
+  .two-section  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contact-footer .navbar-icons {
+    margin: 0;
+  }
+  .contact-footer , .contact-footer ul {
+    width: 100%;
+  }
+  .services-footer ,.services-footer ul {
+    width: 100%;
+  }
+  .work-time h4{
+    text-align: start;
+  }
+  .work-time , .week-day {
+    width: 100%;
+    
+  }
+  .contact-footer ul li {
+    font-size: 18px;
+  }
+  .contact-footer ul{
+    justify-content: center;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+}
+  
+  .week-day{
+    width: 100%;
+    
+    justify-content: center;
+    align-items: center;
+  }
+  .work-time ul li {
+    font-size: 21px;
+  }
+  .services-footer ul li {
+    font-size:18px;
+  }
+}

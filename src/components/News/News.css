@@ -1,0 +1,84 @@
+
+*{
+  font-family: 'sinma';
+}
+
+.news-container {
+  width: 100%;
+  font-family: "sinma";
+  margin-top: 3rem;
+
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+.news-container h6{
+  color: rgb(67, 67, 67);
+}
+.card-wrapper-news {
+  display: flex;
+  flex: 1 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.card-body-news {
+  width: 25rem;
+  height: 30rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  
+
+  box-shadow: 4px 5px 13px 2px rgba(0, 0, 0,.5);
+  margin: 10px;
+  padding: 10px;
+  text-align: start;
+  overflow: hidden;
+}
+
+
+.card-body-news img {
+  width: 100%;
+  height: 18rem;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+
+  
+}
+.card-body-news:hover img {
+
+  transform: scale(.9)
+}
+
+.card-body-news h4 {
+  font-size: 20px;
+  margin: 20px 0;
+
+}
+
+.card-body-news p {
+  font-size: 16px;
+  color: rgb(60, 60, 60);
+}
+
+.card-body-news a {
+  text-decoration: none;
+}
+
+.btn-learn-more {
+  position: relative;
+  padding: 10px;
+  display: inline-flex;
+  flex-direction: row;
+
+  border: 1px solid #ffc000;
+  overflow: hidden;
+
+  width: 10rem;
+  align-items: center;
+}

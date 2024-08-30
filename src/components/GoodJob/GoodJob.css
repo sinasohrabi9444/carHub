@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "sinma";
+  src: url("../../fonts/IRANBlack.woff") format("woff");
+}
+
+.container-goodjob {
+  margin-top: 5rem;
+
+  display: flex;
+  width: 100%;
+  background-color: #1c1c1c;
+  height: 60vh;
+}
+.bg-img {
+  width: 50%;
+}
+.bg-img img {
+  width: 35rem;
+  animation: up-down 8s linear infinite;
+}
+.width100{
+  width: 25%;
+}
+.left-side-content-goodjob {
+  font-family: "sinma";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 20px;
+  padding: 20px;
+  color: rgb(227, 227, 227);
+}
+
+@keyframes up-down {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(0, 90px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .bg-img img {
+    width: 33rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .bg-img img {
+    width: 25rem;
+  }
+  .container-goodjob {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 687px) {
+  .bg-img {
+    display: none;
+  }
+  .left-side-content-goodjob h2 {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  .left-side-content-goodjob p {
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .left-side-content-goodjob h2 {
+    font-size: 18px;
+  }
+  .left-side-content-goodjob p {
+    line-height: 30px;
+    font-size: 14px;
+  }
+  .width100 {
+    width: 100%;
+  }
+}

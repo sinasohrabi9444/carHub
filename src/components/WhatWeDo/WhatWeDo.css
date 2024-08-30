@@ -1,0 +1,134 @@
+.container-we-do {
+  font-family: "mahbobe";
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #1c1c1c;
+  padding: 10px;
+  }
+  .bg{
+    background-image: url('/public/img/car-shadow.png');
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+.container-we-do h4 {
+  color: white;
+}
+.container-we-do h6 {
+  color: gray;
+}
+
+.wrapper-card-area{
+  padding:10px 20%;
+}
+#card-area {
+  padding: 20px 0;
+}
+.box-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  color: white;
+}
+.box {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+.box img {
+  width: 30rem;
+ height: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  
+}
+.overlay {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(transparent, #1c1c1c 70%);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+.overlay h3 {
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-top: 80%;
+
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.overlay p {
+  padding-bottom: 70px;
+}
+
+.overlay a {
+  margin-top: 10px;
+  color: #262626;
+  text-decoration: none;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 50px;
+  text-align: center;
+  padding: 5px 15px;
+}
+.box:hover img {
+  transform: scale(1.1);
+}
+.box:hover .overlay {
+  height: 100%;
+}
+.what-we-do-movie{
+  width: 60%;
+}
+
+/* Responsive */
+
+@media screen and (min-width:1200px) {
+  .wrapper-card-area {
+    padding: 10px 10%;
+}
+}
+@media screen and (max-width:1200px) {
+  .wrapper-card-area {
+    padding: 10px 1%;
+}
+}
+
+
+@media screen and (max-width:570px) {
+  
+  .box:hover .overlay {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width:570px) {
+  
+  .box:hover .overlay {
+    height: 40vh;
+  }
+}
+@media screen and (max-width:512px) {
+
+  .btn-cover{
+    width: 100%;
+  }
+}

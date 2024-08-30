@@ -1,0 +1,146 @@
+.container-section-news {
+  position: relative;
+  bottom: 90px;
+
+  z-index: 1;
+  padding-top: 50px;
+}
+
+.center-news {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border: 1px solid black;
+  padding: 10px;
+}
+.right-side-container {
+  background-color: rgb(247, 247, 247);
+
+  height: fit-content;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: sticky;
+  padding: 10px;
+  top: 120px;
+  right: 0;
+}
+
+.card-news-container {
+  margin-top: 30px;
+  flex-direction: column;
+}
+.center-news img {
+  align-items: center;
+  width: 35rem;
+  border-radius: 10px;
+}
+.text-content p {
+  color: rgb(102, 114, 136);
+}
+.text-content ul {
+  margin-right: 15px;
+}
+.text-content ul li {
+  margin: 10px;
+  line-height: 2rem;
+}
+.text-content ul li::marker {
+  color: purple;
+}
+.text-card {
+  margin-right: 10px;
+  justify-content: space-evenly;
+}
+.text-card a {
+  text-decoration: none;
+  color: black;
+}
+.text-card h6 {
+  font-size: 18px;
+  transition: color 0.1s ease;
+}
+.text-card h6:hover {
+  color: red;
+}
+.text-card span {
+  color: gray;
+  font-size: 14px;
+}
+.creator {
+  margin-right: 5px;
+}
+/* SoloNews.css */
+.sidebar {
+  width: 250px;
+  height: 400px; /* ارتفاع سایدبار */
+  overflow-y: auto; /* قابلیت اسکرول */
+  position: relative; /* موقعیت نسبی */
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.fixed {
+  position: fixed; /* فیکس کردن سایدبار */
+  top: 20px; /* فاصله از بالای صفحه */
+}
+
+.center-news {
+  width: 50rem;
+}
+.card-news {
+  display: flex;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1104px) {
+  .container-section-news {
+    flex-direction: column;
+  }
+
+  .card-news {
+    width: auto;
+  }
+  .card-news-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+ 
+  }
+  .card-news img{
+    width: 15rem;
+    height: 10rem;
+  }
+  .center-news {
+    width: 100%;
+  }
+ 
+}
+
+
+@media screen and (max-width: 687px) {
+
+  .video-player-post{
+    width: 100%;
+  }
+
+  .text-content {
+    width: 100%;
+  }
+  .center-news img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 512px) {
+
+  .card-news {
+    flex-direction: column;
+    text-align: center;
+  }
+  .card-news h6{
+    margin-top: 20px;
+  }
+}

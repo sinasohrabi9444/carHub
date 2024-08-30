@@ -1,0 +1,32 @@
+
+/* table  */
+
+.text-content table{
+    margin:50px 0 ;
+    width:50rem;
+  
+  }
+  .text-content table  td ,th{
+  
+    border: 1px solid black;
+    padding: 10px;
+  
+  
+  }
+  .text-content table td:first-child{
+    color: rgb(16, 100, 101);
+  
+  }
+  .text-content table th{
+    color: rgb(16, 100, 101);
+  }
+
+  /* responsive */
+
+  @media screen and (max-width:992px) {
+    
+
+    .text-content table {
+      width: auto;
+    }
+  }
